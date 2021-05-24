@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "YTB Download",
+    "description": "Baixar video do youtube em audio ou video",
+    "author": "mr.dmtx",
+    "browser_action": {
+   	 "default_title": "YTB Download",
+   	 "default_popup": "index.html",
+   	 "default_icon": "icon.jpg"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
+    
+}
